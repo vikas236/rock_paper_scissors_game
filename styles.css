@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 10%;
+}
+
+.choice {
+    padding: 20px 100px;
+    font-size: 32px;
+}
+
+.box {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.p_score, .c_score {
+    text-align: center;
+    font-size: 28px;
+}
+
+
+.result {
+    margin-top: 50px;
+    font-size: 32px;
+}
