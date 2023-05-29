@@ -1,3 +1,6 @@
+const btn = document.querySelectorAll(".choice")
+
+
 function getComputerChoice() {
     num = (Math.floor(Math.random()*3));
     if (num==0) return "rock"
@@ -5,8 +8,8 @@ function getComputerChoice() {
     else return "scissor"
 }
 
-function playerSelection() {
-    let p = prompt ("Enter your selection: ");
+function play(choice) {
+    let p = choice;
     let c = getComputerChoice();
     
     if (p==c) return "its a tie!"
@@ -19,4 +22,13 @@ function playerSelection() {
     else return "Invalid input";
 }
 
-console.log(playerSelection());
+function selection() {
+    for (i=0; i<btn.length; i++) {
+        btn[i].addEventListener("click", function() {
+            let = choice = this.innerText.toLowerCase();
+            console.log(play(choice));
+        });
+    }
+}
+
+selection();
