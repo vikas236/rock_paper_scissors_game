@@ -19,4 +19,10 @@ function playerSelection() {
     else return "Invalid input";
 }
 
-console.log(playerSelection());
+function play() {
+    for (i=0; i<5; i++) {
+        console.log(playerSelection());
+    }
+}
+
+play();
